@@ -1,0 +1,54 @@
+{
+  "run": {
+    "command": "nx run-many --target=build",
+    "startTime": "2023-10-31T17:51:01.736Z",
+    "endTime": "2023-10-31T17:51:25.009Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "server:build",
+      "target": "build",
+      "projectName": "server",
+      "hash": "6097593925096611203",
+      "startTime": "2023-10-31T17:51:01.750Z",
+      "endTime": "2023-10-31T17:51:05.903Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@shopnest/prisma-dev:build",
+      "target": "build",
+      "projectName": "@shopnest/prisma-dev",
+      "hash": "13524574937504240976",
+      "startTime": "2023-10-31T17:51:01.750Z",
+      "endTime": "2023-10-31T17:51:06.334Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@shopnest/react-query:build",
+      "target": "build",
+      "projectName": "@shopnest/react-query",
+      "hash": "9308285948243680527",
+      "startTime": "2023-10-31T17:51:01.750Z",
+      "endTime": "2023-10-31T17:51:06.921Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "admin:build",
+      "target": "build",
+      "projectName": "admin",
+      "hash": "10474519305156917141",
+      "startTime": "2023-10-31T17:51:05.905Z",
+      "endTime": "2023-10-31T17:51:25.008Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

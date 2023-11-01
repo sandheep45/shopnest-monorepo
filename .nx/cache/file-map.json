@@ -1,0 +1,612 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.2",
+  "deps": {
+    "nx": "^17.0.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "@shopnest/react-query": [
+        {
+          "file": "@libs/react-query/.eslintrc.cjs",
+          "hash": "18224317155734308275"
+        },
+        {
+          "file": "@libs/react-query/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "@libs/react-query/README.md",
+          "hash": "10087808838262969736"
+        },
+        {
+          "file": "@libs/react-query/dist/ReactQuery.d.ts",
+          "hash": "7622891303470840309"
+        },
+        {
+          "file": "@libs/react-query/dist/index.d.ts",
+          "hash": "3846590109096442587"
+        },
+        {
+          "file": "@libs/react-query/dist/react-query.cjs",
+          "hash": "5936970994991581204"
+        },
+        {
+          "file": "@libs/react-query/dist/react-query.js",
+          "hash": "3696373132519172141"
+        },
+        {
+          "file": "@libs/react-query/index.html",
+          "hash": "4025202329384162906"
+        },
+        {
+          "file": "@libs/react-query/package.json",
+          "hash": "1890479131360210674",
+          "deps": [
+            "npm:@tanstack/react-query-devtools",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-query",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-plugin-dts"
+          ]
+        },
+        {
+          "file": "@libs/react-query/src/ReactQuery.tsx",
+          "hash": "12966870350609713167"
+        },
+        {
+          "file": "@libs/react-query/src/index.ts",
+          "hash": "5521496783113625534"
+        },
+        {
+          "file": "@libs/react-query/tsconfig.json",
+          "hash": "14032556756270793734"
+        },
+        {
+          "file": "@libs/react-query/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "@libs/react-query/vite.config.ts",
+          "hash": "17914866587738892505"
+        }
+      ],
+      "@shopnest/prisma-dev": [
+        {
+          "file": "@libs/prisma-dev/.env",
+          "hash": "7659323092661611898"
+        },
+        {
+          "file": "@libs/prisma-dev/.eslintrc.json",
+          "hash": "13849185013655002781"
+        },
+        {
+          "file": "@libs/prisma-dev/.gitignore",
+          "hash": "12862290348472965560"
+        },
+        {
+          "file": "@libs/prisma-dev/dist/PrismaClient.d.ts",
+          "hash": "15733914602924584614"
+        },
+        {
+          "file": "@libs/prisma-dev/dist/index.d.ts",
+          "hash": "8032423659881760584"
+        },
+        {
+          "file": "@libs/prisma-dev/dist/index.js",
+          "hash": "11268057848488004410"
+        },
+        {
+          "file": "@libs/prisma-dev/dist/index.mjs",
+          "hash": "769033892927463805"
+        },
+        {
+          "file": "@libs/prisma-dev/package.json",
+          "hash": "16908800227194193493",
+          "deps": [
+            "npm:@prisma/client",
+            "npm:prisma",
+            "npm:vite-plugin-node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-plugin-react",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-plugin-dts"
+          ]
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/migrations/20231031162510_init/migration.sql",
+          "hash": "341060303342737827"
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/migrations/migration_lock.toml",
+          "hash": "8877461730101463416"
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/schema.prisma",
+          "hash": "910868735372115496"
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/seed.ts",
+          "hash": "14387260708310408273"
+        },
+        {
+          "file": "@libs/prisma-dev/src/PrismaClient.ts",
+          "hash": "12323131080033871433"
+        },
+        {
+          "file": "@libs/prisma-dev/src/index.ts",
+          "hash": "12459721561974862863"
+        },
+        {
+          "file": "@libs/prisma-dev/tsconfig.json",
+          "hash": "5763288027195733267"
+        },
+        {
+          "file": "@libs/prisma-dev/vite.config.ts",
+          "hash": "293548095550140293"
+        }
+      ],
+      "server": [
+        {
+          "file": "@apps/server/.eslintrc.js",
+          "hash": "7461846271827386206"
+        },
+        {
+          "file": "@apps/server/.gitignore",
+          "hash": "672911037926083482"
+        },
+        {
+          "file": "@apps/server/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "@apps/server/README.md",
+          "hash": "8286378509751487236"
+        },
+        {
+          "file": "@apps/server/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "@apps/server/package.json",
+          "hash": "7125183267641606764",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "@shopnest/prisma-dev",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:jest",
+            "npm:prettier",
+            "npm:source-map-support",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "@apps/server/src/app.controller.spec.ts",
+          "hash": "2727664763654384995"
+        },
+        {
+          "file": "@apps/server/src/app.controller.ts",
+          "hash": "17907816828093923886"
+        },
+        {
+          "file": "@apps/server/src/app.module.ts",
+          "hash": "3053211398376247444"
+        },
+        {
+          "file": "@apps/server/src/app.service.ts",
+          "hash": "4001264079298856218"
+        },
+        {
+          "file": "@apps/server/src/main.ts",
+          "hash": "14185884491160501270"
+        },
+        {
+          "file": "@apps/server/src/prisma.service.ts",
+          "hash": "10988168422150706647"
+        },
+        {
+          "file": "@apps/server/test/app.e2e-spec.ts",
+          "hash": "15142680097789702029"
+        },
+        {
+          "file": "@apps/server/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "@apps/server/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "@apps/server/tsconfig.json",
+          "hash": "1876265833229380624"
+        }
+      ],
+      "admin": [
+        {
+          "file": "@apps/admin/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "@apps/admin/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "@apps/admin/.next/app-build-manifest.json",
+          "hash": "6642808631538785885"
+        },
+        {
+          "file": "@apps/admin/.next/build-manifest.json",
+          "hash": "10138881943030343721"
+        },
+        {
+          "file": "@apps/admin/.next/cache/.tsbuildinfo",
+          "hash": "8941338426042944154"
+        },
+        {
+          "file": "@apps/admin/.next/cache/eslint/.cache_y17cny",
+          "hash": "12491947372456918684"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/0.pack.gz",
+          "hash": "425875324194911637"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/1.pack.gz",
+          "hash": "425875324194911637"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/2.pack.gz",
+          "hash": "323169770201676188"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/3.pack.gz",
+          "hash": "8663488032438079154"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/4.pack.gz",
+          "hash": "13638820973887477955"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/5.pack.gz",
+          "hash": "13805441821143156651"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/6.pack.gz",
+          "hash": "5071169870135278060"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/7.pack.gz",
+          "hash": "11998240901996451986"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/8.pack.gz",
+          "hash": "10229920589485151755"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/9.pack.gz",
+          "hash": "7658289093942824849"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/index.pack.gz",
+          "hash": "14376064703512381025"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development/index.pack.gz.old",
+          "hash": "16346754803987576519"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development-fallback/0.pack.gz",
+          "hash": "7456487923870340737"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-development-fallback/index.pack.gz",
+          "hash": "10853044379899755961"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/0.pack",
+          "hash": "11986248277179200229"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/1.pack",
+          "hash": "15273533034071286671"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/2.pack",
+          "hash": "15193982692701502012"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/3.pack",
+          "hash": "11346682331026495578"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/4.pack",
+          "hash": "7011223732142509555"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/index.pack",
+          "hash": "6816030322177251371"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/client-production/index.pack.old",
+          "hash": "8284449165541456728"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/0.pack.gz",
+          "hash": "9083622051416621027"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/1.pack.gz",
+          "hash": "6954580572568910161"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/2.pack.gz",
+          "hash": "8070889213558583444"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/3.pack.gz",
+          "hash": "2173123819532367642"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/4.pack.gz",
+          "hash": "8281556125855782043"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/5.pack.gz",
+          "hash": "12858238535738067676"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/6.pack.gz",
+          "hash": "8607448068882042695"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/index.pack.gz",
+          "hash": "1564249908468652562"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-development/index.pack.gz.old",
+          "hash": "17908972245480873711"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-production/0.pack",
+          "hash": "18294078526600298133"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-production/1.pack",
+          "hash": "3084272765404567639"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-production/index.pack",
+          "hash": "6076499684850234791"
+        },
+        {
+          "file": "@apps/admin/.next/cache/webpack/server-production/index.pack.old",
+          "hash": "2576364786068311677"
+        },
+        {
+          "file": "@apps/admin/.next/package.json",
+          "hash": "11338307439248427064"
+        },
+        {
+          "file": "@apps/admin/.next/react-loadable-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "@apps/admin/.next/server/app-paths-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "@apps/admin/.next/server/middleware-build-manifest.js",
+          "hash": "3981925224393156821"
+        },
+        {
+          "file": "@apps/admin/.next/server/middleware-manifest.json",
+          "hash": "11919384916463558595"
+        },
+        {
+          "file": "@apps/admin/.next/server/middleware-react-loadable-manifest.js",
+          "hash": "9185069726031651908"
+        },
+        {
+          "file": "@apps/admin/.next/server/next-font-manifest.js",
+          "hash": "16541577805185552134"
+        },
+        {
+          "file": "@apps/admin/.next/server/next-font-manifest.json",
+          "hash": "11891788324563068681"
+        },
+        {
+          "file": "@apps/admin/.next/server/pages-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "@apps/admin/.next/server/server-reference-manifest.js",
+          "hash": "6946490633129093176"
+        },
+        {
+          "file": "@apps/admin/.next/server/server-reference-manifest.json",
+          "hash": "9252284858890023778"
+        },
+        {
+          "file": "@apps/admin/.next/static/chunks/polyfills.js",
+          "hash": "3837536670243305325"
+        },
+        {
+          "file": "@apps/admin/.next/static/development/_buildManifest.js",
+          "hash": "15678672880040024319"
+        },
+        {
+          "file": "@apps/admin/.next/static/development/_ssgManifest.js",
+          "hash": "17018243955171961484"
+        },
+        {
+          "file": "@apps/admin/.next/trace",
+          "hash": "9427535818302475968"
+        },
+        {
+          "file": "@apps/admin/.next/types/package.json",
+          "hash": "6094546126370684104"
+        },
+        {
+          "file": "@apps/admin/README.md",
+          "hash": "12205685531602560652"
+        },
+        {
+          "file": "@apps/admin/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "@apps/admin/next.config.js",
+          "hash": "14594058484359092244"
+        },
+        {
+          "file": "@apps/admin/package.json",
+          "hash": "13033406876683648374",
+          "deps": [
+            "@shopnest/react-query",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "@apps/admin/postcss.config.js",
+          "hash": "1579725330904862112"
+        },
+        {
+          "file": "@apps/admin/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "@apps/admin/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "@apps/admin/src/app/Provider.tsx",
+          "hash": "1987786960118816348"
+        },
+        {
+          "file": "@apps/admin/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "@apps/admin/src/app/globals.css",
+          "hash": "15329929398110739341"
+        },
+        {
+          "file": "@apps/admin/src/app/layout.tsx",
+          "hash": "11696726155808130620"
+        },
+        {
+          "file": "@apps/admin/src/app/page.tsx",
+          "hash": "18330455095448735433"
+        },
+        {
+          "file": "@apps/admin/tailwind.config.ts",
+          "hash": "776514114970524489"
+        },
+        {
+          "file": "@apps/admin/tsconfig.json",
+          "hash": "5523950529985030143"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "16639750214113849532"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "13376763276452797372"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "4883720305015911248"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "13587193831250906473"
+      },
+      {
+        "file": ".nx/cache/run.json",
+        "hash": "5445225589681278744"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/10474519305156917141",
+        "hash": "10753824908500794123"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/13524574937504240976",
+        "hash": "8109835273182799160"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/6097593925096611203",
+        "hash": "17818415749563038531"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/9308285948243680527",
+        "hash": "16811057655026143111"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "17996597189717877384"
+      },
+      {
+        "file": "package.json",
+        "hash": "214964359603975820"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1141541409411459739"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "1412090786662475121"
+      }
+    ]
+  }
+}
