@@ -1,8 +1,8 @@
 {
   "run": {
-    "command": "nx run-many --target=build",
-    "startTime": "2023-10-31T17:51:01.736Z",
-    "endTime": "2023-10-31T17:51:25.009Z",
+    "command": "nx run-many -t build",
+    "startTime": "2023-11-01T06:40:03.698Z",
+    "endTime": "2023-11-01T06:40:22.161Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "server:build",
       "target": "build",
       "projectName": "server",
-      "hash": "6097593925096611203",
-      "startTime": "2023-10-31T17:51:01.750Z",
-      "endTime": "2023-10-31T17:51:05.903Z",
+      "hash": "4154477001604838853",
+      "startTime": "2023-11-01T06:40:03.714Z",
+      "endTime": "2023-11-01T06:40:08.329Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -21,9 +21,9 @@
       "taskId": "@shopnest/prisma-dev:build",
       "target": "build",
       "projectName": "@shopnest/prisma-dev",
-      "hash": "13524574937504240976",
-      "startTime": "2023-10-31T17:51:01.750Z",
-      "endTime": "2023-10-31T17:51:06.334Z",
+      "hash": "5769238056514459828",
+      "startTime": "2023-11-01T06:40:03.714Z",
+      "endTime": "2023-11-01T06:40:08.730Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,9 +32,9 @@
       "taskId": "@shopnest/react-query:build",
       "target": "build",
       "projectName": "@shopnest/react-query",
-      "hash": "9308285948243680527",
-      "startTime": "2023-10-31T17:51:01.750Z",
-      "endTime": "2023-10-31T17:51:06.921Z",
+      "hash": "11197672211449215325",
+      "startTime": "2023-11-01T06:40:03.714Z",
+      "endTime": "2023-11-01T06:40:09.493Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -43,9 +43,9 @@
       "taskId": "admin:build",
       "target": "build",
       "projectName": "admin",
-      "hash": "10474519305156917141",
-      "startTime": "2023-10-31T17:51:05.905Z",
-      "endTime": "2023-10-31T17:51:25.008Z",
+      "hash": "3727920263033740458",
+      "startTime": "2023-11-01T06:40:08.335Z",
+      "endTime": "2023-11-01T06:40:22.160Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

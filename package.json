@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate": "pnpm --filter prisma-dev migrate",
+    "dev": "pnpm run --parallel -r dev",
+    "dev:cache": "nx run-many -t dev",
+    "build": "pnpm run --parallel -r build",
+    "build:cache": "nx run-many -t build"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,15 @@
+
+> @shopnest/prisma-dev@0.0.0 build /home/sandheep/projects/personal/shopnest/@libs/prisma-dev
+> tsc && vite build
+
+[36mvite v4.5.0 [32mbuilding SSR bundle for production...[36m[39m
+transforming...
+[32m✓[39m 2 modules transformed.
+rendering chunks...
+
+[vite:dts] Start generate declaration files...
+[2mdist/[22m[36mindex.mjs  [39m[1m[2m0.05 kB[22m[1m[22m
+[vite:dts] Declaration files built in 1166ms.
+
+[2mdist/[22m[36mindex.js  [39m[1m[2m0.24 kB[22m[1m[22m
+[32m✓ built in 1.25s[39m
