@@ -66,6 +66,9 @@ importers:
       '@react-navigation/native':
         specifier: ^6.0.2
         version: 6.1.9(react-native@0.72.6)(react@18.2.0)
+      '@shopnest/react-query':
+        specifier: workspace:^
+        version: link:../../@libs/react-query
       expo:
         specifier: ~49.0.15
         version: 49.0.16(@babel/core@7.23.2)

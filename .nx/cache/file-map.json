@@ -8,198 +8,141 @@
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {
-      "@shopnest/react-query": [
+      "mobile": [
         {
-          "file": "@libs/react-query/.eslintrc.cjs",
-          "hash": "18224317155734308275"
+          "file": "@apps/mobile/.eslintrc.json",
+          "hash": "16563097452579659818"
         },
         {
-          "file": "@libs/react-query/.gitignore",
-          "hash": "13046175384202504187"
+          "file": "@apps/mobile/.gitignore",
+          "hash": "11988622709807168759"
         },
         {
-          "file": "@libs/react-query/README.md",
-          "hash": "10087808838262969736"
+          "file": "@apps/mobile/app/(tabs)/_layout.tsx",
+          "hash": "17966153295698563905"
         },
         {
-          "file": "@libs/react-query/index.html",
-          "hash": "4025202329384162906"
+          "file": "@apps/mobile/app/(tabs)/index.tsx",
+          "hash": "17484809542484345975"
         },
         {
-          "file": "@libs/react-query/package.json",
-          "hash": "1890479131360210674",
+          "file": "@apps/mobile/app/(tabs)/two.tsx",
+          "hash": "12965588997872783188"
+        },
+        {
+          "file": "@apps/mobile/app/+html.tsx",
+          "hash": "7007004941579802179"
+        },
+        {
+          "file": "@apps/mobile/app/[...missing].tsx",
+          "hash": "117348057602949451"
+        },
+        {
+          "file": "@apps/mobile/app/_layout.tsx",
+          "hash": "8742273388045616448"
+        },
+        {
+          "file": "@apps/mobile/app/modal.tsx",
+          "hash": "5244787141350267290"
+        },
+        {
+          "file": "@apps/mobile/app.json",
+          "hash": "9925944041462607470"
+        },
+        {
+          "file": "@apps/mobile/assets/fonts/SpaceMono-Regular.ttf",
+          "hash": "8316399838606165836"
+        },
+        {
+          "file": "@apps/mobile/assets/images/adaptive-icon.png",
+          "hash": "16102135492459408350"
+        },
+        {
+          "file": "@apps/mobile/assets/images/favicon.png",
+          "hash": "10556792184362654649"
+        },
+        {
+          "file": "@apps/mobile/assets/images/icon.png",
+          "hash": "14252482080276080187"
+        },
+        {
+          "file": "@apps/mobile/assets/images/splash.png",
+          "hash": "16493559885079032523"
+        },
+        {
+          "file": "@apps/mobile/babel.config.js",
+          "hash": "7237511851071137954"
+        },
+        {
+          "file": "@apps/mobile/components/EditScreenInfo.tsx",
+          "hash": "18155329539377701631"
+        },
+        {
+          "file": "@apps/mobile/components/ExternalLink.tsx",
+          "hash": "17651066971186044573"
+        },
+        {
+          "file": "@apps/mobile/components/StyledText.tsx",
+          "hash": "6261859614917935018"
+        },
+        {
+          "file": "@apps/mobile/components/Themed.tsx",
+          "hash": "15981385578985435456"
+        },
+        {
+          "file": "@apps/mobile/components/__tests__/StyledText-test.js",
+          "hash": "390636912203905775"
+        },
+        {
+          "file": "@apps/mobile/constants/Colors.ts",
+          "hash": "1674334635894774723"
+        },
+        {
+          "file": "@apps/mobile/index.js",
+          "hash": "4035802387000626013"
+        },
+        {
+          "file": "@apps/mobile/metro.config.js",
+          "hash": "9615424208606768910"
+        },
+        {
+          "file": "@apps/mobile/package.json",
+          "hash": "7109789226335653505",
           "deps": [
-            "npm:@tanstack/react-query-devtools",
+            "npm:@expo/vector-icons",
+            "npm:@react-navigation/native",
+            "@shopnest/react-query",
+            "npm:expo",
+            "npm:expo-font",
+            "npm:expo-linking",
+            "npm:expo-router",
+            "npm:expo-splash-screen",
+            "npm:expo-status-bar",
+            "npm:expo-system-ui",
+            "npm:expo-web-browser",
             "npm:react",
             "npm:react-dom",
-            "npm:react-query",
+            "npm:react-native",
+            "npm:react-native-gesture-handler",
+            "npm:react-native-safe-area-context",
+            "npm:react-native-screens",
+            "npm:react-native-web",
+            "npm:@babel/core",
+            "npm:@babel/runtime",
             "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:@vitejs/plugin-react-swc",
-            "npm:eslint",
-            "npm:eslint-plugin-react-hooks",
-            "npm:eslint-plugin-react-refresh",
-            "npm:typescript",
-            "npm:vite",
-            "npm:vite-plugin-dts"
-          ]
-        },
-        {
-          "file": "@libs/react-query/src/ReactQuery.tsx",
-          "hash": "12966870350609713167"
-        },
-        {
-          "file": "@libs/react-query/src/index.ts",
-          "hash": "5521496783113625534"
-        },
-        {
-          "file": "@libs/react-query/tsconfig.json",
-          "hash": "14032556756270793734"
-        },
-        {
-          "file": "@libs/react-query/tsconfig.node.json",
-          "hash": "8586866767247417612"
-        },
-        {
-          "file": "@libs/react-query/vite.config.ts",
-          "hash": "17914866587738892505"
-        }
-      ],
-      "@shopnest/prisma-dev": [
-        {
-          "file": "@libs/prisma-dev/.eslintrc.json",
-          "hash": "13849185013655002781"
-        },
-        {
-          "file": "@libs/prisma-dev/.gitignore",
-          "hash": "12862290348472965560"
-        },
-        {
-          "file": "@libs/prisma-dev/package.json",
-          "hash": "10068135419074399668",
-          "deps": [
-            "npm:@prisma/client",
-            "npm:prisma",
-            "npm:vite-plugin-dts",
-            "npm:vite-plugin-node",
             "npm:@typescript-eslint/eslint-plugin",
             "npm:@typescript-eslint/parser",
             "npm:eslint",
             "npm:eslint-plugin-react",
-            "npm:typescript",
-            "npm:vite"
-          ]
-        },
-        {
-          "file": "@libs/prisma-dev/prisma/migrations/20231031162510_init/migration.sql",
-          "hash": "341060303342737827"
-        },
-        {
-          "file": "@libs/prisma-dev/prisma/migrations/migration_lock.toml",
-          "hash": "8877461730101463416"
-        },
-        {
-          "file": "@libs/prisma-dev/prisma/schema.prisma",
-          "hash": "910868735372115496"
-        },
-        {
-          "file": "@libs/prisma-dev/prisma/seed.ts",
-          "hash": "14387260708310408273"
-        },
-        {
-          "file": "@libs/prisma-dev/src/PrismaClient.ts",
-          "hash": "12323131080033871433"
-        },
-        {
-          "file": "@libs/prisma-dev/src/index.ts",
-          "hash": "12459721561974862863"
-        },
-        {
-          "file": "@libs/prisma-dev/tsconfig.json",
-          "hash": "5763288027195733267"
-        },
-        {
-          "file": "@libs/prisma-dev/vite.config.ts",
-          "hash": "4941870754447517086"
-        }
-      ],
-      "admin": [
-        {
-          "file": "@apps/admin/.eslintrc.json",
-          "hash": "10616060546436571437"
-        },
-        {
-          "file": "@apps/admin/.gitignore",
-          "hash": "15751075988610075934"
-        },
-        {
-          "file": "@apps/admin/README.md",
-          "hash": "12205685531602560652"
-        },
-        {
-          "file": "@apps/admin/next.config.js",
-          "hash": "14594058484359092244"
-        },
-        {
-          "file": "@apps/admin/package.json",
-          "hash": "13033406876683648374",
-          "deps": [
-            "@shopnest/react-query",
-            "npm:next",
-            "npm:react",
-            "npm:react-dom",
-            "npm:@types/node",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:autoprefixer",
-            "npm:eslint",
-            "npm:eslint-config-next",
-            "npm:postcss",
-            "npm:tailwindcss",
+            "npm:jest",
+            "npm:jest-expo",
+            "npm:react-test-renderer",
             "npm:typescript"
           ]
         },
         {
-          "file": "@apps/admin/postcss.config.js",
-          "hash": "1579725330904862112"
-        },
-        {
-          "file": "@apps/admin/public/next.svg",
-          "hash": "8300767200008744458"
-        },
-        {
-          "file": "@apps/admin/public/vercel.svg",
-          "hash": "2376673330454856631"
-        },
-        {
-          "file": "@apps/admin/src/app/Provider.tsx",
-          "hash": "1987786960118816348"
-        },
-        {
-          "file": "@apps/admin/src/app/favicon.ico",
-          "hash": "9157999678830540297"
-        },
-        {
-          "file": "@apps/admin/src/app/globals.css",
-          "hash": "15329929398110739341"
-        },
-        {
-          "file": "@apps/admin/src/app/layout.tsx",
-          "hash": "11696726155808130620"
-        },
-        {
-          "file": "@apps/admin/src/app/page.tsx",
-          "hash": "18330455095448735433"
-        },
-        {
-          "file": "@apps/admin/tailwind.config.ts",
-          "hash": "776514114970524489"
-        },
-        {
-          "file": "@apps/admin/tsconfig.json",
-          "hash": "5523950529985030143"
+          "file": "@apps/mobile/tsconfig.json",
+          "hash": "2377890342303387984"
         }
       ],
       "server": [
@@ -270,7 +213,7 @@
         },
         {
           "file": "@apps/server/src/app.service.ts",
-          "hash": "4001264079298856218"
+          "hash": "13396413525727719642"
         },
         {
           "file": "@apps/server/src/main.ts",
@@ -296,6 +239,218 @@
           "file": "@apps/server/tsconfig.json",
           "hash": "1876265833229380624"
         }
+      ],
+      "@shopnest/prisma-dev": [
+        {
+          "file": "@libs/prisma-dev/.eslintrc.json",
+          "hash": "13849185013655002781"
+        },
+        {
+          "file": "@libs/prisma-dev/.gitignore",
+          "hash": "12862290348472965560"
+        },
+        {
+          "file": "@libs/prisma-dev/package.json",
+          "hash": "10068135419074399668",
+          "deps": [
+            "npm:@prisma/client",
+            "npm:prisma",
+            "npm:vite-plugin-dts",
+            "npm:vite-plugin-node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-plugin-react",
+            "npm:typescript",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/migrations/20231031162510_init/migration.sql",
+          "hash": "341060303342737827"
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/migrations/migration_lock.toml",
+          "hash": "8877461730101463416"
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/schema.prisma",
+          "hash": "910868735372115496"
+        },
+        {
+          "file": "@libs/prisma-dev/prisma/seed.ts",
+          "hash": "14387260708310408273"
+        },
+        {
+          "file": "@libs/prisma-dev/src/PrismaClient.ts",
+          "hash": "2672566216048781796"
+        },
+        {
+          "file": "@libs/prisma-dev/src/index.ts",
+          "hash": "12459721561974862863"
+        },
+        {
+          "file": "@libs/prisma-dev/tsconfig.json",
+          "hash": "5763288027195733267"
+        },
+        {
+          "file": "@libs/prisma-dev/vite.config.ts",
+          "hash": "4941870754447517086"
+        }
+      ],
+      "admin": [
+        {
+          "file": "@apps/admin/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "@apps/admin/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "@apps/admin/README.md",
+          "hash": "12205685531602560652"
+        },
+        {
+          "file": "@apps/admin/next.config.js",
+          "hash": "14594058484359092244"
+        },
+        {
+          "file": "@apps/admin/package.json",
+          "hash": "6471185808245034723",
+          "deps": [
+            "@shopnest/prisma-dev",
+            "@shopnest/react-query",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "@apps/admin/postcss.config.js",
+          "hash": "1579725330904862112"
+        },
+        {
+          "file": "@apps/admin/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "@apps/admin/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "@apps/admin/src/app/Provider.tsx",
+          "hash": "1987786960118816348"
+        },
+        {
+          "file": "@apps/admin/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "@apps/admin/src/app/globals.css",
+          "hash": "15329929398110739341"
+        },
+        {
+          "file": "@apps/admin/src/app/layout.tsx",
+          "hash": "11696726155808130620"
+        },
+        {
+          "file": "@apps/admin/src/app/page.tsx",
+          "hash": "11171129063202064434"
+        },
+        {
+          "file": "@apps/admin/tailwind.config.ts",
+          "hash": "776514114970524489"
+        },
+        {
+          "file": "@apps/admin/tsconfig.json",
+          "hash": "5523950529985030143"
+        }
+      ],
+      "@shopnest/react-query": [
+        {
+          "file": "@libs/react-query/.eslintrc.cjs",
+          "hash": "18224317155734308275"
+        },
+        {
+          "file": "@libs/react-query/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "@libs/react-query/README.md",
+          "hash": "10087808838262969736"
+        },
+        {
+          "file": "@libs/react-query/index.html",
+          "hash": "4025202329384162906"
+        },
+        {
+          "file": "@libs/react-query/package.json",
+          "hash": "13726808378574233942",
+          "deps": [
+            "npm:@tanstack/react-query-devtools",
+            "npm:axios",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-query",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-plugin-dts"
+          ]
+        },
+        {
+          "file": "@libs/react-query/src/ReactQuery.tsx",
+          "hash": "12966870350609713167"
+        },
+        {
+          "file": "@libs/react-query/src/apis/user.ts",
+          "hash": "6390683684722964018"
+        },
+        {
+          "file": "@libs/react-query/src/axios-instance.ts",
+          "hash": "1054695563777459965"
+        },
+        {
+          "file": "@libs/react-query/src/hooks/index.ts",
+          "hash": "12347069793757214942"
+        },
+        {
+          "file": "@libs/react-query/src/hooks/useUser.ts",
+          "hash": "6033224596306808233"
+        },
+        {
+          "file": "@libs/react-query/src/index.ts",
+          "hash": "4241386724658697325"
+        },
+        {
+          "file": "@libs/react-query/tsconfig.json",
+          "hash": "14032556756270793734"
+        },
+        {
+          "file": "@libs/react-query/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "@libs/react-query/vite.config.ts",
+          "hash": "17914866587738892505"
+        }
       ]
     },
     "nonProjectFiles": [
@@ -304,8 +459,12 @@
         "hash": "2980792109324589025"
       },
       {
+        "file": ".npmrc",
+        "hash": "2143727616016563684"
+      },
+      {
         "file": ".nx/cache/file-map.json",
-        "hash": "15403609865419605622"
+        "hash": "12092076558106623090"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -317,11 +476,11 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "7451096248468130951"
+        "hash": "9615389540466870747"
       },
       {
         "file": ".nx/cache/run.json",
-        "hash": "8422970960719086731"
+        "hash": "10070690467190745831"
       },
       {
         "file": ".nx/cache/terminalOutputs/10474519305156917141",
@@ -329,7 +488,7 @@
       },
       {
         "file": ".nx/cache/terminalOutputs/11197672211449215325",
-        "hash": "13963001751652234713"
+        "hash": "15299866209057380805"
       },
       {
         "file": ".nx/cache/terminalOutputs/13524574937504240976",
@@ -345,7 +504,7 @@
       },
       {
         "file": ".nx/cache/terminalOutputs/5769238056514459828",
-        "hash": "921762190199543515"
+        "hash": "1265734521297692735"
       },
       {
         "file": ".nx/cache/terminalOutputs/6097593925096611203",
@@ -365,7 +524,7 @@
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "1141541409411459739"
+        "hash": "8649024925200785048"
       },
       {
         "file": "pnpm-workspace.yaml",
