@@ -1,11 +1,23 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { VerificationTokensService } from './verification-tokens.service';
 import { CreateVerificationTokenDto } from './dto/create-verification-token.dto';
 import { UpdateVerificationTokenDto } from './dto/update-verification-token.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('verification-tokens')
+@ApiTags('Verification Tokens')
 export class VerificationTokensController {
-  constructor(private readonly verificationTokensService: VerificationTokensService) {}
+  constructor(
+    private readonly verificationTokensService: VerificationTokensService,
+  ) {}
 
   @Post()
   create(@Body() createVerificationTokenDto: CreateVerificationTokenDto) {
@@ -23,8 +35,14 @@ export class VerificationTokensController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateVerificationTokenDto: UpdateVerificationTokenDto) {
-    return this.verificationTokensService.update(+id, updateVerificationTokenDto);
+  update(
+    @Param('id') id: string,
+    @Body() updateVerificationTokenDto: UpdateVerificationTokenDto,
+  ) {
+    return this.verificationTokensService.update(
+      +id,
+      updateVerificationTokenDto,
+    );
   }
 
   @Delete(':id')

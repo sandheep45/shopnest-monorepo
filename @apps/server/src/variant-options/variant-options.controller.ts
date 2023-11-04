@@ -1,9 +1,19 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { VariantOptionsService } from './variant-options.service';
 import { CreateVariantOptionDto } from './dto/create-variant-option.dto';
 import { UpdateVariantOptionDto } from './dto/update-variant-option.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('variant-options')
+@ApiTags('Variant Options')
 export class VariantOptionsController {
   constructor(private readonly variantOptionsService: VariantOptionsService) {}
 
@@ -23,7 +33,10 @@ export class VariantOptionsController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateVariantOptionDto: UpdateVariantOptionDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateVariantOptionDto: UpdateVariantOptionDto,
+  ) {
     return this.variantOptionsService.update(+id, updateVariantOptionDto);
   }
 

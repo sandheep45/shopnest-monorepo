@@ -1,9 +1,19 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { MetadatasService } from './metadatas.service';
 import { CreateMetadataDto } from './dto/create-metadata.dto';
 import { UpdateMetadataDto } from './dto/update-metadata.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('metadatas')
+@ApiTags('Metadatas')
 export class MetadatasController {
   constructor(private readonly metadatasService: MetadatasService) {}
 
@@ -23,7 +33,10 @@ export class MetadatasController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateMetadataDto: UpdateMetadataDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateMetadataDto: UpdateMetadataDto,
+  ) {
     return this.metadatasService.update(+id, updateMetadataDto);
   }
 

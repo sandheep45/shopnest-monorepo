@@ -1,11 +1,23 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { CustomerReviewsService } from './customer-reviews.service';
 import { CreateCustomerReviewDto } from './dto/create-customer-review.dto';
 import { UpdateCustomerReviewDto } from './dto/update-customer-review.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('customer-reviews')
+@ApiTags('Customer Review')
 export class CustomerReviewsController {
-  constructor(private readonly customerReviewsService: CustomerReviewsService) {}
+  constructor(
+    private readonly customerReviewsService: CustomerReviewsService,
+  ) {}
 
   @Post()
   create(@Body() createCustomerReviewDto: CreateCustomerReviewDto) {
@@ -23,7 +35,10 @@ export class CustomerReviewsController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCustomerReviewDto: UpdateCustomerReviewDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateCustomerReviewDto: UpdateCustomerReviewDto,
+  ) {
     return this.customerReviewsService.update(+id, updateCustomerReviewDto);
   }
 
