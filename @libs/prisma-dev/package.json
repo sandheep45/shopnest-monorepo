@@ -22,6 +22,7 @@
     "build": "tsc && vite build",
     "migrate": "prisma migrate dev",
     "seed": "prisma db seed",
+    "studio": "prisma studio",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -30,12 +31,14 @@
     "eslint": "^8.52.0",
     "eslint-plugin-react": "^7.33.2",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "zod-prisma": "^0.5.4"
   },
   "dependencies": {
     "@prisma/client": "5.5.2",
     "prisma": "^5.5.2",
     "vite-plugin-dts": "^3.6.3",
-    "vite-plugin-node": "^3.0.2"
+    "vite-plugin-node": "^3.0.2",
+    "zod": "^3.22.4"
   }
 }

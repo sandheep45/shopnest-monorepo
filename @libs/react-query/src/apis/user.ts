@@ -1,5 +1,7 @@
+import { User } from "@shopnest/prisma-dev";
+import axiosInstance from "../axios-instance";
+
 export const user = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const users = await res.json();
-  return users;
+  const { data } = await axiosInstance.get<User[]>("/");
+  return data;
 };

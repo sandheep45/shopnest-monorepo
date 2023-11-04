@@ -1,8 +1,10 @@
-import axiosPrimitive from "axios";
+import axios from "axios";
 
-export const axios = axiosPrimitive.create({
-  baseURL: "",
-  headers: {
-    "X-Custom-Header": "foobar",
-  },
+const baseURL = "http://localhost:3001";
+
+const axiosInstance = axios.create({
+  baseURL,
+  headers: {},
 });
+
+export default axiosInstance;

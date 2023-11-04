@@ -1,1 +1,2 @@
-export * from './PrismaClient'
+export * from "./PrismaClient";
+export * from "./schema";

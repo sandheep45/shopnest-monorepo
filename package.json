@@ -1,14 +1,23 @@
 {
   "name": "shopnest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "migrate": "pnpm --filter prisma-dev migrate",
+    "seed": "pnpm --filter prisma-dev seed",
+    "studio": "pnpm --filter prisma-dev studio",
     "dev": "pnpm run --parallel -r dev",
+    "dev:mobile": "pnpm --filter mobile dev",
+    "dev:server": "pnpm --filter server dev",
+    "dev:admin": "pnpm --filter admin dev",
     "dev:cache": "nx run-many -t dev",
     "build": "pnpm run --parallel -r build",
-    "build:cache": "nx run-many -t build"
+    "build:cache": "nx run-many -t build",
+    "install:prisma": "pnpm --filter prisma-dev add",
+    "install:admin": "pnpm --filter admin add",
+    "install:mobile": "pnpm --filter mobile add",
+    "install:react-query": "pnpm --filter react-query add",
+    "install:server": "pnpm --filter server add"
   },
   "keywords": [],
   "author": "",
