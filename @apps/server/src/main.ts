@@ -14,9 +14,9 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('api', app, document, {
     swaggerOptions: {
-      docExpansion: "none",
-      tagsSorter: "alpha",
-      operationSorter: "alpha"
+      docExpansion: 'none',
+      tagsSorter: 'alpha',
+      operationSorter: 'alpha',
     },
   });
 

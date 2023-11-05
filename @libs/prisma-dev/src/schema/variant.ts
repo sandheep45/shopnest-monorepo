@@ -1,5 +1,14 @@
-import * as z from "zod"
-import { CompleteOptions, RelatedOptionsSchema, CompleteMedia, RelatedMediaSchema, CompleteMetaData, RelatedMetaDataSchema, CompleteProduct, RelatedProductSchema } from "./index"
+import * as z from "zod";
+import {
+  CompleteOptions,
+  RelatedOptionsSchema,
+  CompleteMedia,
+  RelatedMediaSchema,
+  CompleteMetaData,
+  RelatedMetaDataSchema,
+  CompleteProduct,
+  RelatedProductSchema,
+} from "./index";
 
 export const VariantSchema = z.object({
   id: z.string(),
@@ -11,13 +20,15 @@ export const VariantSchema = z.object({
   onSelfQuantity: z.number().int(),
   inWareHouseQuantity: z.number().int(),
   productId: z.string(),
-})
+});
 
-export interface CompleteVariant extends z.infer<typeof VariantSchema> {
-  options: CompleteOptions[]
-  Media: CompleteMedia[]
-  VariantMetaData: CompleteMetaData[]
-  Product: CompleteProduct
+export interface IVariant extends z.infer<typeof VariantSchema> {}
+
+export interface CompleteVariant extends IVariant {
+  options: CompleteOptions[];
+  Media: CompleteMedia[];
+  VariantMetaData: CompleteMetaData[];
+  Product: CompleteProduct;
 }
 
 /**
@@ -25,9 +36,11 @@ export interface CompleteVariant extends z.infer<typeof VariantSchema> {
  *
  * NOTE: Lazy required in case of potential circular dependencies within schema
  */
-export const RelatedVariantSchema: z.ZodSchema<CompleteVariant> = z.lazy(() => VariantSchema.extend({
-  options: RelatedOptionsSchema.array(),
-  Media: RelatedMediaSchema.array(),
-  VariantMetaData: RelatedMetaDataSchema.array(),
-  Product: RelatedProductSchema,
-}))
+export const RelatedVariantSchema: z.ZodSchema<CompleteVariant> = z.lazy(() =>
+  VariantSchema.extend({
+    options: RelatedOptionsSchema.array(),
+    Media: RelatedMediaSchema.array(),
+    VariantMetaData: RelatedMetaDataSchema.array(),
+    Product: RelatedProductSchema,
+  }),
+);

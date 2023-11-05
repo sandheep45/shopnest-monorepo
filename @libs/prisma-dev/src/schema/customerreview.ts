@@ -1,5 +1,10 @@
-import * as z from "zod"
-import { CompleteProduct, RelatedProductSchema, CompleteUser, RelatedUserSchema } from "./index"
+import * as z from "zod";
+import {
+  CompleteProduct,
+  RelatedProductSchema,
+  CompleteUser,
+  RelatedUserSchema,
+} from "./index";
 
 export const CustomerReviewSchema = z.object({
   id: z.string(),
@@ -9,11 +14,13 @@ export const CustomerReviewSchema = z.object({
   createdAt: z.date(),
   productId: z.string(),
   userId: z.string().nullish(),
-})
+});
 
-export interface CompleteCustomerReview extends z.infer<typeof CustomerReviewSchema> {
-  Product: CompleteProduct
-  User?: CompleteUser | null
+export interface ICustomerReview extends z.infer<typeof CustomerReviewSchema> {}
+
+export interface CompleteCustomerReview extends ICustomerReview {
+  Product: CompleteProduct;
+  User?: CompleteUser | null;
 }
 
 /**
@@ -21,7 +28,10 @@ export interface CompleteCustomerReview extends z.infer<typeof CustomerReviewSch
  *
  * NOTE: Lazy required in case of potential circular dependencies within schema
  */
-export const RelatedCustomerReviewSchema: z.ZodSchema<CompleteCustomerReview> = z.lazy(() => CustomerReviewSchema.extend({
-  Product: RelatedProductSchema,
-  User: RelatedUserSchema.nullish(),
-}))
+export const RelatedCustomerReviewSchema: z.ZodSchema<CompleteCustomerReview> =
+  z.lazy(() =>
+    CustomerReviewSchema.extend({
+      Product: RelatedProductSchema,
+      User: RelatedUserSchema.nullish(),
+    }),
+  );
