@@ -3,7 +3,7 @@ import { UserService } from './user.service';
 import { User } from '@shopnest/prisma-dev';
 import { ApiTags } from '@nestjs/swagger';
 
-@Controller('/user')
+@Controller('/users')
 @ApiTags('Users')
 export class UserController {
   constructor(private readonly userServices: UserService) {}
