@@ -1,19 +1,6 @@
-import * as z from "zod";
-import { Status } from "@prisma/client";
-import {
-  CompleteVariantOptions,
-  RelatedVariantOptionsSchema,
-  CompleteMetaData,
-  RelatedMetaDataSchema,
-  CompleteCustomerReview,
-  RelatedCustomerReviewSchema,
-  CompleteVariant,
-  RelatedVariantSchema,
-  CompleteMedia,
-  RelatedMediaSchema,
-  CompleteCategory,
-  RelatedCategorySchema,
-} from "./index";
+import * as z from "zod"
+import { Status } from "@prisma/client"
+import { CompleteVariantOptions, RelatedVariantOptionsSchema, CompleteMetaData, RelatedMetaDataSchema, CompleteCustomerReview, RelatedCustomerReviewSchema, CompleteVariant, RelatedVariantSchema, CompleteMedia, RelatedMediaSchema, CompleteCategory, RelatedCategorySchema } from "./index"
 
 export const ProductSchema = z.object({
   id: z.string(),
@@ -28,15 +15,15 @@ export const ProductSchema = z.object({
   weight: z.number().int(),
   mediaId: z.string(),
   categoryId: z.string(),
-});
+})
 
 export interface CompleteProduct extends z.infer<typeof ProductSchema> {
-  VariantOptions: CompleteVariantOptions[];
-  MetaData: CompleteMetaData[];
-  CustometReview: CompleteCustomerReview[];
-  Variant: CompleteVariant[];
-  Media: CompleteMedia;
-  Category: CompleteCategory;
+  VariantOptions: CompleteVariantOptions[]
+  MetaData: CompleteMetaData[]
+  CustometReview: CompleteCustomerReview[]
+  Variant: CompleteVariant[]
+  Media: CompleteMedia
+  Category: CompleteCategory
 }
 
 /**
@@ -44,13 +31,11 @@ export interface CompleteProduct extends z.infer<typeof ProductSchema> {
  *
  * NOTE: Lazy required in case of potential circular dependencies within schema
  */
-export const RelatedProductSchema: z.ZodSchema<CompleteProduct> = z.lazy(() =>
-  ProductSchema.extend({
-    VariantOptions: RelatedVariantOptionsSchema.array(),
-    MetaData: RelatedMetaDataSchema.array(),
-    CustometReview: RelatedCustomerReviewSchema.array(),
-    Variant: RelatedVariantSchema.array(),
-    Media: RelatedMediaSchema,
-    Category: RelatedCategorySchema,
-  }),
-);
+export const RelatedProductSchema: z.ZodSchema<CompleteProduct> = z.lazy(() => ProductSchema.extend({
+  VariantOptions: RelatedVariantOptionsSchema.array(),
+  MetaData: RelatedMetaDataSchema.array(),
+  CustometReview: RelatedCustomerReviewSchema.array(),
+  Variant: RelatedVariantSchema.array(),
+  Media: RelatedMediaSchema,
+  Category: RelatedCategorySchema,
+}))

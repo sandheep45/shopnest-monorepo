@@ -1,13 +1,6 @@
-import * as z from "zod";
-import { UserStatus, Role } from "@prisma/client";
-import {
-  CompleteMedia,
-  RelatedMediaSchema,
-  CompleteCustomerReview,
-  RelatedCustomerReviewSchema,
-  CompleteAccount,
-  RelatedAccountSchema,
-} from "./index";
+import * as z from "zod"
+import { UserStatus, Role } from "@prisma/client"
+import { CompleteMedia, RelatedMediaSchema, CompleteCustomerReview, RelatedCustomerReviewSchema, CompleteAccount, RelatedAccountSchema } from "./index"
 
 export const UserSchema = z.object({
   id: z.string(),
@@ -22,12 +15,12 @@ export const UserSchema = z.object({
   mediaId: z.string().nullish(),
   emailVerified: z.date().nullish(),
   image: z.string().nullish(),
-});
+})
 
 export interface CompleteUser extends z.infer<typeof UserSchema> {
-  Media?: CompleteMedia | null;
-  CustomerReview: CompleteCustomerReview[];
-  accounts: CompleteAccount[];
+  Media?: CompleteMedia | null
+  CustomerReview: CompleteCustomerReview[]
+  accounts: CompleteAccount[]
 }
 
 /**
@@ -35,10 +28,8 @@ export interface CompleteUser extends z.infer<typeof UserSchema> {
  *
  * NOTE: Lazy required in case of potential circular dependencies within schema
  */
-export const RelatedUserSchema: z.ZodSchema<CompleteUser> = z.lazy(() =>
-  UserSchema.extend({
-    Media: RelatedMediaSchema.nullish(),
-    CustomerReview: RelatedCustomerReviewSchema.array(),
-    accounts: RelatedAccountSchema.array(),
-  }),
-);
+export const RelatedUserSchema: z.ZodSchema<CompleteUser> = z.lazy(() => UserSchema.extend({
+  Media: RelatedMediaSchema.nullish(),
+  CustomerReview: RelatedCustomerReviewSchema.array(),
+  accounts: RelatedAccountSchema.array(),
+}))
