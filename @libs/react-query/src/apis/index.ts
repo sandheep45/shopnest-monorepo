@@ -6,7 +6,6 @@ export * from "./media";
 export * from "./metadatas";
 export * from "./options";
 export * from "./products";
-export * from "./sessions";
 export * from "./tags";
 export * from "./users";
 export * from "./variant-options";

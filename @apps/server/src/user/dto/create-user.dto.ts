@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Role, IUser, UserStatus } from '@shopnest/prisma-dev';
+import { Role, User, UserStatus } from '@shopnest/prisma-dev';
 import {
   IsEmail,
   IsEnum,
@@ -9,10 +9,22 @@ import {
 } from 'class-validator';
 
 export class CreateUserDto
-  implements Omit<IUser, 'id' | 'createdAt' | 'updatedAt'>
+  implements
+    Omit<
+      User,
+      | 'id'
+      | 'createdAt'
+      | 'updatedAt'
+      | 'emailVerified'
+      | 'emailVerified'
+      | 'hashedPassword'
+    >
 {
   @IsString()
-  name?: string;
+  username: string;
+
+  @IsString()
+  name: string;
 
   @IsEmail()
   email: string;

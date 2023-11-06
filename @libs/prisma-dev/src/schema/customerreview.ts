@@ -16,9 +16,8 @@ export const CustomerReviewSchema = z.object({
   userId: z.string().nullish(),
 });
 
-export interface ICustomerReview extends z.infer<typeof CustomerReviewSchema> {}
-
-export interface CompleteCustomerReview extends ICustomerReview {
+export interface CompleteCustomerReview
+  extends z.infer<typeof CustomerReviewSchema> {
   Product: CompleteProduct;
   User?: CompleteUser | null;
 }

@@ -6,6 +6,3 @@ export const VerificationTokenSchema = z.object({
   token: z.string(),
   expires: z.date(),
 });
-
-
-export interface IVerificationToken extends z.infer<typeof VerificationTokenSchema> {}

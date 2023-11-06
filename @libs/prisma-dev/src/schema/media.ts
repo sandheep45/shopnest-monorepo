@@ -18,9 +18,7 @@ export const MediaSchema = z.object({
   variantId: z.string().nullish(),
 });
 
-export interface IMedia extends z.infer<typeof MediaSchema> {}
-
-export interface CompleteMedia extends IMedia {
+export interface CompleteMedia extends z.infer<typeof MediaSchema> {
   Variant?: CompleteVariant | null;
   Product: CompleteProduct[];
   Category: CompleteCategory[];

@@ -18,9 +18,7 @@ export const MetaDataSchema = z.object({
   categoryId: z.string().nullish(),
 });
 
-export interface IMetadata extends z.infer<typeof MetaDataSchema> {}
-
-export interface CompleteMetaData extends IMetadata {
+export interface CompleteMetaData extends z.infer<typeof MetaDataSchema> {
   Product?: CompleteProduct | null;
   Variant?: CompleteVariant | null;
   Category?: CompleteCategory | null;

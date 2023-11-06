@@ -16,10 +16,7 @@ export const AccountSchema = z.object({
   session_state: z.string().nullish(),
 });
 
-
-export interface IAccount extends z.infer<typeof AccountSchema> {}
-
-export interface CompleteAccount extends IAccount {
+export interface CompleteAccount extends z.infer<typeof AccountSchema> {
   user: CompleteUser;
 }
 

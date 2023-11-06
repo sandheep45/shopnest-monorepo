@@ -22,9 +22,7 @@ export const VariantSchema = z.object({
   productId: z.string(),
 });
 
-export interface IVariant extends z.infer<typeof VariantSchema> {}
-
-export interface CompleteVariant extends IVariant {
+export interface CompleteVariant extends z.infer<typeof VariantSchema> {
   options: CompleteOptions[];
   Media: CompleteMedia[];
   VariantMetaData: CompleteMetaData[];

@@ -8,9 +8,8 @@ export const VariantOptionsSchema = z.object({
   productId: z.string(),
 });
 
-export interface IVariantOptions extends z.infer<typeof VariantOptionsSchema> {}
-
-export interface CompleteVariantOptions extends IVariantOptions {
+export interface CompleteVariantOptions
+  extends z.infer<typeof VariantOptionsSchema> {
   Product: CompleteProduct;
 }
 

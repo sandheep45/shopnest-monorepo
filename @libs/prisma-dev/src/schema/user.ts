@@ -3,8 +3,6 @@ import { UserStatus, Role } from "@prisma/client";
 import {
   CompleteMedia,
   RelatedMediaSchema,
-  CompleteSession,
-  RelatedSessionSchema,
   CompleteCustomerReview,
   RelatedCustomerReviewSchema,
   CompleteAccount,
@@ -16,6 +14,7 @@ export const UserSchema = z.object({
   createdAt: z.date(),
   updatedAt: z.date(),
   name: z.string().nullish(),
+  username: z.string(),
   email: z.string(),
   hashedPassword: z.string().nullish(),
   status: z.nativeEnum(UserStatus),
@@ -25,11 +24,8 @@ export const UserSchema = z.object({
   image: z.string().nullish(),
 });
 
-export interface IUser extends z.infer<typeof UserSchema> {}
-
-export interface CompleteUser extends IUser {
+export interface CompleteUser extends z.infer<typeof UserSchema> {
   Media?: CompleteMedia | null;
-  sessions: CompleteSession[];
   CustomerReview: CompleteCustomerReview[];
   accounts: CompleteAccount[];
 }
@@ -42,7 +38,6 @@ export interface CompleteUser extends IUser {
 export const RelatedUserSchema: z.ZodSchema<CompleteUser> = z.lazy(() =>
   UserSchema.extend({
     Media: RelatedMediaSchema.nullish(),
-    sessions: RelatedSessionSchema.array(),
     CustomerReview: RelatedCustomerReviewSchema.array(),
     accounts: RelatedAccountSchema.array(),
   }),

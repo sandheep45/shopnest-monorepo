@@ -18,9 +18,7 @@ export const CategorySchema = z.object({
   mediaId: z.string(),
 });
 
-export interface ICategory extends z.infer<typeof CategorySchema> {}
-
-export interface CompleteCategory extends ICategory {
+export interface CompleteCategory extends z.infer<typeof CategorySchema> {
   Media: CompleteMedia;
   Metadata: CompleteMetaData[];
   Product: CompleteProduct[];

@@ -30,9 +30,7 @@ export const ProductSchema = z.object({
   categoryId: z.string(),
 });
 
-export interface IProduct extends z.infer<typeof ProductSchema> {}
-
-export interface CompleteProduct extends IProduct {
+export interface CompleteProduct extends z.infer<typeof ProductSchema> {
   VariantOptions: CompleteVariantOptions[];
   MetaData: CompleteMetaData[];
   CustometReview: CompleteCustomerReview[];

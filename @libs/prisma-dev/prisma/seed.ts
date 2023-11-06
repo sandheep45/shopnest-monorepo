@@ -1,18 +1,16 @@
-import {PrismaClient} from "@prisma/client"
+import { fakerUser } from "../src/seed/user";
 
-const prisma = new PrismaClient()
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 const main = async () => {
-  const newUser = await prisma.user.create({
-    data: {
-      email: "test@test.com",
-      name: "Test",
-      role: "ADMIN",
-    }
-  })
+  console.log(fakerUser);
+  const users = await prisma.user.createMany({
+    data: fakerUser,
+  });
 
-  console.log(newUser);
-  
-}
+  return users;
+};
 
-main().then(console.log).catch(console.log)
+main().then(console.log).catch(console.log);
