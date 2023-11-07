@@ -1,49 +1,57 @@
 import {
   fakerProduct,
   fakerVariant,
-  fakerCustomerReview,
   fakerUser,
   fakerOptions,
   fakerMetadatas,
   fakerVariantOptions,
-} from "../src/seed";
+  fakerCustomerReviews,
+  fakerMedia,
+} from "../src";
 
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 const main = async () => {
-  const products = await prisma.product.create({
-    data: {
-      ...fakerProduct(),
-      Variant: {
-        create: {
-          ...fakerVariant(),
-          options: {
-            create: fakerOptions,
-          },
-          VariantMetaData: {
-            create: fakerMetadatas,
-          },
-        },
-      },
-      MetaData: {
-        create: fakerMetadatas,
-      },
-      CustometReview: {
-        create: {
-          ...fakerCustomerReview(),
-          User: {
-            create: fakerUser(),
+  const products: unknown[] = [];
+  for (let i = 1; i <= 20; i++) {
+    const product = await prisma.product.create({
+      data: {
+        ...fakerProduct(),
+        Variant: {
+          create: {
+            ...fakerVariant(),
+            options: {
+              create: fakerOptions,
+            },
+            VariantMetaData: {
+              create: fakerMetadatas,
+            },
           },
         },
+        MetaData: {
+          create: fakerMetadatas,
+        },
+        CustometReview: {
+          create: fakerCustomerReviews.map((review) => ({
+            ...review,
+            User: {
+              create: fakerUser(),
+            },
+          })),
+        },
+        VariantOptions: {
+          create: fakerVariantOptions,
+        },
+        Media: {
+          create: fakerMedia(),
+        },
       },
-      VariantOptions: {
-        create: fakerVariantOptions,
-      },
-    },
-  });
+    });
 
+    products.push(product);
+  }
   return products;
 };
 
